@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil Nair | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .about-text {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .skills-list li {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Harshil Nair</h1>
+            <p>3rd Semester B.Tech CSE Student | Aspiring Full-Stack Software Engineer</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a Computer Science undergraduate focused on building reliable web applications and mastering problem-solving through Data Structures and Algorithms. My primary goal is to gain hands-on industry experience through a Software Engineering Internship and continuously expand my full-stack capabilities.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Repository Log</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Hello World Setup</h3>
+                    <p>Initial repository established during Activity 1 to configure Git workflows and version control practices.</p>
+                    <a href="https://github.com/HarshilNair/hello-world" target="_blank">View Repository &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Pair Programming Log</h3>
+                    <p>Collaboration log built using GitLens and Live Share in Activity 3 to practice real-time co-authoring.</p>
+                    <a href="https://github.com/HarshilNair/collaboration-log" target="_blank">View Repository &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>LeetCode Solutions</h3>
+                    <p>Comprehensive repository documenting algorithmic solutions across arrays, trees, and dynamic programming.</p>
+                    <a href="https://github.com/HarshilNair/leetcode-solutions" target="_blank">View Repository &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <ul class="skills-list">
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Connect with me on <a href="https://github.com/HarshilNair" target="_blank">GitHub</a></p>
+            <p>&copy; 2026 Harshil Nair. Built via Prompt Engineering.</p>
+        </footer>
+    </div>
+</body>
+</html>
